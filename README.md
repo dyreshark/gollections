@@ -1,9 +1,11 @@
-== Gollections ==
+Gollections
+==========
 
 Random data structures/algorithms that are implemented in Go. At the moment,
 all that I have is a Trie. I plan to add more as time goes on.
 
--- Trie --
+Trie
+----------
 
 Usage consists of five functions:
       NewTrie
@@ -26,6 +28,7 @@ Usage consists of five functions:
       trie.Has("FooBar")          // true
       trie.Has("FooBarBaz")       // false
 
--- License --
+License
+----------
 
 Licensed under Apache v2.
