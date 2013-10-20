@@ -45,7 +45,7 @@ type Trie struct {
 }
 
 // Makes a trie node for me.
-func newTrieNode(r rune, p *trieNode) *trieNode {
+func newTrieNode(r rune) *trieNode {
 	return &trieNode{
 		children: map[rune]*trieNode{},
 		value:    r,
@@ -167,7 +167,7 @@ func (t *Trie) Delete(s string) {
 func (t *trieNode) addChildNode(r rune) *trieNode {
 	node, ok := t.children[r]
 	if !ok {
-		node = newTrieNode(r, t)
+		node = newTrieNode(r)
 		t.children[r] = node
 	}
 	return node

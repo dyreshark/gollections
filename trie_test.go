@@ -173,7 +173,7 @@ func BenchmarkTrieHas(b *testing.B) {
 
 func BenchmarkLargeTrieSearch(b *testing.B) {
 	const NUM_STRINGS = 1000000
-	const STR_LEN = 20
+	const STR_LEN = 10
 	// Number of possible chars our strings can have
 	const NUM_CHRS = 94
 	// Offset of the char values
